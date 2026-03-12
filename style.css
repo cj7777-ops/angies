@@ -343,6 +343,9 @@ img.original-size {
 .footer .social-icons a:hover {
     color: #fff;          /* highlight on hover */
 }
+.app-logo {margin-top: 20px;}
+.footer hr {border:none;background: #b5b5b5;height: 1px;margin: 20px 0;}
+
 
 
 

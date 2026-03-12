@@ -306,7 +306,11 @@ img.original-size {
 
 .col-5 img:hover {filter: grayscale(0%);transform: scale(1.05);}
 
-.round-logo {
+.testimonial-img {
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   object-fit: cover;
 }
+
+

@@ -66,6 +66,11 @@ p {
     object-fit: contain; /* ensures the whole image fits without cropping */
 }
 
+.col-2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 .col-2 h1 {
     font-size: 50px;
     line-height: 60px;
@@ -345,6 +350,7 @@ img.original-size {
 }
 .app-logo {margin-top: 20px;}
 .footer hr {border:none;background: #b5b5b5;height: 1px;margin: 20px 0;}
+
 
 
 

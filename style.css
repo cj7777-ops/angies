@@ -346,6 +346,10 @@ img.original-size {
 }
 .app-logo {margin-top: 20px;}
 .footer hr {border:none;background: #b5b5b5;height: 1px;margin: 20px 0;}
+.col-2 img {
+    width: 100%;
+    height: auto;
+}
 
 
 

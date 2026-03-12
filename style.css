@@ -63,6 +63,9 @@ p {
     width: 100%;
     height: auto;
     display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 .col-2 h1 {
     font-size: 50px;
@@ -343,6 +346,7 @@ img.original-size {
 }
 .app-logo {margin-top: 20px;}
 .footer hr {border:none;background: #b5b5b5;height: 1px;margin: 20px 0;}
+
 
 
 

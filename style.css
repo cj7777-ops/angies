@@ -303,4 +303,10 @@ img.original-size {
     filter: grayscale(0%);
     transform: scale(1.05);
 }
+
 .col-5 img:hover {filter: grayscale(0%);transform: scale(1.05);}
+
+.round-logo {
+  border-radius: 50%;
+  object-fit: cover;
+}

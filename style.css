@@ -312,6 +312,14 @@ img.original-size {
   border-radius: 50%;
   object-fit: cover;
 }
+.logo {
+    width: 100px;        /* small, seeable size */
+    height: 100px;       /* keep it square */
+    object-fit: cover;   /* crop to fill the square without distortion */
+    border-radius: 50%;  /* make it perfectly round */
+    margin-top: 20px;
+}
+
 
 
 

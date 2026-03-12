@@ -319,15 +319,15 @@ img.original-size {
 
 .footer .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* pushes columns apart */
 }
 
 .footer .col-4 {
-    width: 30%;
+    flex: 1;
 }
 
-.footer .col-4:nth-child(2) {
-    margin: 0 40px; /* adds space on both sides of Quick Links */
+.footer .col-4:not(:last-child) {
+    margin-right: 60px; /* space between Contact → Quick Links → Follow Us */
 }
 
 .footer h3 {
@@ -338,6 +338,7 @@ img.original-size {
 .footer li {
     margin-bottom: 8px;
 }
+
 
 
 

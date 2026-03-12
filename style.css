@@ -58,13 +58,6 @@ p {
     min-width: 300px;
 }
 
-.col-2 img {
-    width: 100%;        /* fill the column width */
-    height: auto;       /* maintain aspect ratio */
-    display: block;     /* removes extra bottom spacing */
-    margin: 50px 0;     /* adds vertical spacing without affecting image size */
-    object-fit: contain; /* ensures the whole image fits without cropping */
-}
 
 .col-2 img {
     width: 100%;
@@ -350,6 +343,7 @@ img.original-size {
 }
 .app-logo {margin-top: 20px;}
 .footer hr {border:none;background: #b5b5b5;height: 1px;margin: 20px 0;}
+
 
 
 

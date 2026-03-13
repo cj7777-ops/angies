@@ -308,6 +308,12 @@ p {
     cursor: pointer;
     margin-left: 20px;
 }
+/* Menu Icon Size */
+.menu-icon {
+    font-size: 20px !important;  /* match nav items (approx) */
+    line-height: 1;              /* remove extra spacing */
+    cursor: pointer;
+    margin-left: 20px;
 }
 
 

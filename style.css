@@ -58,14 +58,14 @@ p {
     min-width: 300px;
 }
 
-/* FIXED IMAGE RULE */
 .col-2 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 100%;        /* fill the column width */
+    height: auto;       /* maintain aspect ratio */
+    display: block;     /* removes extra bottom spacing */
+    margin: 50px 0;     /* adds vertical spacing without affecting image size */
+    object-fit: contain; /* ensures the whole image fits without cropping */
 }
 
-/* Large header text */
 .col-2 h1 {
     font-size: 50px;
     line-height: 60px;
@@ -186,7 +186,7 @@ h4 {
     }
 }
 
-/* Offer Section */
+/* Offer Section (Juul) */
 .offer-row {
     display: flex;
     align-items: center;
@@ -216,44 +216,66 @@ h4 {
 .offer-text h1 {
     font-size: 36px;
     margin-bottom: 5px;
+    color: #000;
 }
 
+/* Tight small text next to Buy Now button */
 .offer-text small {
     display: inline;
-    color: #a01919;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #a01919; /* optional color */
 }
 
-/* Testimonials */
+/* Optional: tighten spacing above button */
+.offer-text .btn {
+    margin-top: 5px;
+}
+/* Testimonial image sizing to match featured products */
+.testimonial img {
+    width: 100%;          /* fill the column width */
+    height: 300px;        /* same height as featured products */
+    object-fit: cover;    /* crop/scale without distortion */
+    border-radius: 10px;  /* optional, same style as products */
+    margin-top: 10px;
+}
+/* Make all main, category, and col-3 images match featured product size */
+.col-2 img,
+.categories .col-3 img {
+    width: 100%;         /* fill the column width */
+    height: 300px;       /* same as featured products */
+    object-fit: cover;   /* crop/scale without distortion */
+    border-radius: 10px; /* optional, consistent style */
+}
+/* Keep this image at its original size */
+img.original-size {
+    width: auto;    /* use original width */
+    height: auto;   /* use original height */
+    max-width: 100%; /* optional: prevent it from overflowing the container */
+    border-radius: 10px; /* optional: keep styling consistent */
+}
+/*-------------Testimonial Section-------------*/
 .testimonial {
-    padding: 50px 20px;
+    padding: 100px;
 }
 
+/* Small, round testimonial images */
 .testimonial .col-3 img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
+    width: 100px;        /* small, seeable size */
+    height: 100px;       /* keep it square */
+    object-fit: cover;   /* crop to fill the square without distortion */
+    border-radius: 50%;  /* make it perfectly round */
     margin-top: 20px;
 }
-
+/* Quote icon color in testimonial matches star rating */
 .testimonial .col-3 .fas.fa-quote-left {
     font-size: 34px;
-    color: green;
+    color: green;  /* same as star ratings */
 }
-
-.col-3 p {
-    font-size: 12px;
-    margin: 12px 0;
-    color: #777;
-}
-
-.testimonial .col-3 h3 {
-    font-weight: 600;
-    color: #555;
-    font-size: 16px;
-}
-
-/* Brands */
+.col-3 p {font-size:12px;margin: 12px 0;color:#777;}
+.testimonial .col-3 h3 {font-weight: 600;color:#555;font-size: 16px;}
+/*---- Brands Section ----*/
 .brands {
     display: flex;
     justify-content: center;
@@ -272,133 +294,57 @@ h4 {
     max-height: 80px;
     object-fit: contain;
     cursor: pointer;
-    filter: grayscale(100%);
+    filter: grayscale(100%); /* makes logos gray */
     transition: filter 0.3s, transform 0.3s;
 }
 
+/* Optional hover effect */
 .col-5 img:hover {
     filter: grayscale(0%);
     transform: scale(1.05);
 }
+.col-5 img:hover {filter: grayscale(0%);transform: scale(1.05);}
 
-/* Footer */
-.footer {
-    background: #000;
-    color: #8a8a8a;
-    font-size: 14px;
-    padding: 30px 0; /* smaller, cleaner */
-}
-
-.footer .row {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px; /* keeps spacing tidy */
-}
-
-.footer .col-1,
-.footer .col-2,
-.footer .col-3,
-.footer .col-4 {
-    flex: 1 1 180px; /* flexible, compact columns */
-    min-width: 180px; /* smaller than your old 250px */
-}
-
-.footer h3 {
-    color: #fff;
-    margin-bottom: 15px;
-}
-
-.footer p,
-.footer ul li a {
-    color: #ccc;
-}
-
+/*------- footer ---------*/
+.footer {background: #000;
+    color: #8a8a8a;font-size:14px; padding: 60px 0 20px;}
+    .footer p{color:#8a8a8a;}
+    .footer h3 {color:#fffmargin-bottom:20px;}
+    .footer col-1, .footer col-2, .footer col-3, .footer col-4 {min-width: 250px;margin-bottom: 20px;}
+    .footer col-1:{flex-basis: 30%;}
+    .footer col-2 {flex: 1;text-align: center;}
+    .footer col-2 img {width: 180px;margin-bottom:20px;}
+    .footer col-3, .footer col-4 {flex-basis:12%;text-align:center;}
+    ul {list-style-type: none;}
 .footer ul {
-    list-style: none;
-    padding: 0;
+    list-style: none;      /* removes bullet points */
+    padding: 0;            /* removes left indentation */
 }
 
 .footer ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;   /* space between links */
 }
 
-.app-logo img {
-    width: 110px;
-    height: auto;
-    margin-right: 10px;
+.footer ul li a {
+    text-decoration: none; /* removes underline */
+    color: #ccc;           /* light footer color */
 }
 
-.footer hr {
-    border: none;
-    background: #444;
-    height: 1px;
-    margin: 20px 0;
+.footer ul li a:hover {
+    color: #fff;           /* highlight on hover */
 }
-/* Compact Footer */
-.footer {
-    padding: 20px 0; /* was 40–60px */
-}
-
-.footer .row {
-    gap: 10px; /* reduce spacing between columns */
+.footer .social-icons a {
+    margin-right: 15px;   /* space between icons */
+    font-size: 20px;      /* slightly larger icons */
+    color: #ccc;          /* footer color */
+    text-decoration: none;
 }
 
-.footer .col-1,
-.footer .col-2,
-.footer .col-3,
-.footer .col-4 {
-    flex: 1 1 140px; /* smaller, more flexible columns */
-    min-width: 140px; /* was 150–250px */
+.footer .social-icons a:hover {
+    color: #fff;          /* highlight on hover */
 }
-
-/* Reduce spacing inside columns */
-.footer h3 {
-    margin-bottom: 10px; /* was 20px */
-}
-
-.footer p,
-.footer ul li {
-    margin-bottom: 5px; /* was 10–12px */
-}
-
-/* Shrink app logos */
-.app-logo img {
-    width: 90px; /* was 120px */
-    margin-right: 5px;
-}
-
-/* Reduce HR spacing */
-.footer hr {
-    margin: 10px 0;
-}
-/* Keep footer compact */
-.footer {
-    padding: 20px 0;
-}
-
-/* Keep columns flexible but allow centering */
-.footer .col-4 {
-    flex: 1 1 180px;
-    min-width: 180px;
-    text-align: center; /* centers the app logos again */
-}
-
-/* Center the app logo container */
-.app-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; /* spacing between icons */
-    margin-top: 10px;
-}
-
-/* Smaller logos so the footer stays short */
-.app-logo img {
-    width: 100px;
-    height: auto;
-}
+.app-logo {margin-top: 20px;}
+.footer hr {border:none;background: #b5b5b5;height: 1px;margin: 20px 0;}
 
 
 

@@ -373,6 +373,33 @@ h4 {
 .footer hr {
     margin: 10px 0;
 }
+/* Keep footer compact */
+.footer {
+    padding: 20px 0;
+}
+
+/* Keep columns flexible but allow centering */
+.footer .col-4 {
+    flex: 1 1 180px;
+    min-width: 180px;
+    text-align: center; /* centers the app logos again */
+}
+
+/* Center the app logo container */
+.app-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* spacing between icons */
+    margin-top: 10px;
+}
+
+/* Smaller logos so the footer stays short */
+.app-logo img {
+    width: 100px;
+    height: auto;
+}
+
 
 
 

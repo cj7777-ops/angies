@@ -301,19 +301,5 @@ p {
 .footer .social-icons a:hover {
     color: #fff !important;
 }
-/* Menu icon */
-.menu-icon {
-    font-size: 18px;   /* same approximate size as nav links */
-    vertical-align: middle; /* aligns it nicely with text */
-    cursor: pointer;
-    margin-left: 20px;
-}
-/* Menu Icon Size */
-.menu-icon {
-    font-size: 20px !important;  /* match nav items (approx) */
-    line-height: 1;              /* remove extra spacing */
-    cursor: pointer;
-    margin-left: 20px;
-}
-
+.menu-icon{width:15px;margin-left: 20px;}
 

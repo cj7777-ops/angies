@@ -225,7 +225,7 @@ h4 {
 
 /* Testimonials */
 .testimonial {
-    padding: 100px;
+    padding: 50px 20px;
 }
 
 .testimonial .col-3 img {
@@ -394,6 +394,7 @@ h4 {
 .footer {
     padding: 40px 0 15px;
 }
+
 
 
 

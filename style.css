@@ -32,11 +32,11 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #000;
 }
 
 p {
-    color: #000000;
+    color: #000;
 }
 
 .container {
@@ -53,25 +53,30 @@ p {
     justify-content: space-around;
 }
 
+/* Columns */
 .col-2 {
     flex-basis: 50%;
     min-width: 300px;
 }
 
-.col-2 img {
-    width: 100%;        /* fill the column width */
-    height: auto;       /* maintain aspect ratio */
-    display: block;     /* removes extra bottom spacing */
-    margin: 50px 0;     /* adds vertical spacing without affecting image size */
-    object-fit: contain; /* ensures the whole image fits without cropping */
+/* Main images inside col-2 (like cigar box) */
+.col-2 img.cigar-img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto;
 }
 
+/* Header text */
 .col-2 h1 {
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
 }
 
+/* Buttons */
 .btn {
     display: inline-block;
     background: #ff523b;
@@ -86,6 +91,7 @@ p {
     background: #563434;
 }
 
+/* Header Section */
 .header {
     background: radial-gradient(#C4A484, #D2B48C);
 }
@@ -94,6 +100,7 @@ p {
     margin-top: 70px;
 }
 
+/* Categories */
 .categories {
     margin: 70px 0;
 }
@@ -108,6 +115,7 @@ p {
     width: 100%;
 }
 
+/* Small container */
 .small-container {
     max-width: 1080px;
     margin: auto;
@@ -115,6 +123,7 @@ p {
     padding-right: 25px;
 }
 
+/* Featured Products */
 .col-4 {
     flex-basis: 25%;
     padding: 10px;
@@ -130,41 +139,8 @@ p {
     border-radius: 10px;
 }
 
-.cart-icon {
-    font-size: 30px;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.title {
-    text-align: center;
-    margin: 50px 0;
-    font-size: 36px;
-    position: relative;
-    color: #000;
-}
-
-.title::after {
-    content: '';
-    display: block;
-    margin: 10px auto 0;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    background: #563434;
-}
-
-h4 {
-    color: #555;
-    font-weight: normal;
-}
-
 .col-4 p {
     font-size: 14px;
-}
-
-.rating i {
-    color: green;
 }
 
 .col-4:hover {
@@ -186,7 +162,7 @@ h4 {
     }
 }
 
-/* Offer Section (Juul) */
+/* Offer Section */
 .offer-row {
     display: flex;
     align-items: center;
@@ -219,63 +195,46 @@ h4 {
     color: #000;
 }
 
-/* Tight small text next to Buy Now button */
 .offer-text small {
     display: inline;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    color: #a01919; /* optional color */
+    color: #a01919;
 }
 
-/* Optional: tighten spacing above button */
 .offer-text .btn {
     margin-top: 5px;
 }
-/* Testimonial image sizing to match featured products */
-.testimonial img {
-    width: 100%;          /* fill the column width */
-    height: 300px;        /* same height as featured products */
-    object-fit: cover;    /* crop/scale without distortion */
-    border-radius: 10px;  /* optional, same style as products */
-    margin-top: 10px;
-}
-/* Make all main, category, and col-3 images match featured product size */
-.col-2 img,
-.categories .col-3 img {
-    width: 100%;         /* fill the column width */
-    height: 300px;       /* same as featured products */
-    object-fit: cover;   /* crop/scale without distortion */
-    border-radius: 10px; /* optional, consistent style */
-}
-/* Keep this image at its original size */
-img.original-size {
-    width: auto;    /* use original width */
-    height: auto;   /* use original height */
-    max-width: 100%; /* optional: prevent it from overflowing the container */
-    border-radius: 10px; /* optional: keep styling consistent */
-}
-/*-------------Testimonial Section-------------*/
+
+/* Testimonial Section */
 .testimonial {
-    padding: 100px;
+    padding: 60px 20px;
 }
 
-/* Small, round testimonial images */
 .testimonial .col-3 img {
-    width: 100px;        /* small, seeable size */
-    height: 100px;       /* keep it square */
-    object-fit: cover;   /* crop to fill the square without distortion */
-    border-radius: 50%;  /* make it perfectly round */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
     margin-top: 20px;
 }
-/* Quote icon color in testimonial matches star rating */
+
 .testimonial .col-3 .fas.fa-quote-left {
     font-size: 34px;
-    color: green;  /* same as star ratings */
+    color: green;
 }
-.col-3 p {font-size:12px;margin: 12px 0;color:#777;}
-.testimonial .col-3 h3 {font-weight: 600;color:#555;font-size: 16px;}
-/*---- Brands Section ----*/
+
+.col-3 p {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.testimonial .col-3 h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Brands Section */
 .brands {
     display: flex;
     justify-content: center;
@@ -294,57 +253,94 @@ img.original-size {
     max-height: 80px;
     object-fit: contain;
     cursor: pointer;
-    filter: grayscale(100%); /* makes logos gray */
+    filter: grayscale(100%);
     transition: filter 0.3s, transform 0.3s;
 }
 
-/* Optional hover effect */
 .col-5 img:hover {
     filter: grayscale(0%);
     transform: scale(1.05);
 }
-.col-5 img:hover {filter: grayscale(0%);transform: scale(1.05);}
 
-/*------- footer ---------*/
-.footer {background: #000;
-    color: #8a8a8a;font-size:14px; padding: 60px 0 20px;}
-    .footer p{color:#8a8a8a;}
-    .footer h3 {color:#fffmargin-bottom:20px;}
-    .footer col-1, .footer col-2, .footer col-3, .footer col-4 {min-width: 250px;margin-bottom: 20px;}
-    .footer col-1:{flex-basis: 30%;}
-    .footer col-2 {flex: 1;text-align: center;}
-    .footer col-2 img {width: 180px;margin-bottom:20px;}
-    .footer col-3, .footer col-4 {flex-basis:12%;text-align:center;}
-    ul {list-style-type: none;}
+/* Footer */
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 40px 0 15px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer .col-1,
+.footer .col-2,
+.footer .col-3,
+.footer .col-4 {
+    flex-basis: auto;
+    min-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer .col-2 {
+    text-align: center;
+}
+
 .footer ul {
-    list-style: none;      /* removes bullet points */
-    padding: 0;            /* removes left indentation */
+    list-style: none;
+    padding: 0;
 }
 
 .footer ul li {
-    margin-bottom: 10px;   /* space between links */
+    margin-bottom: 10px;
 }
 
 .footer ul li a {
-    text-decoration: none; /* removes underline */
-    color: #ccc;           /* light footer color */
+    text-decoration: none;
+    color: #ccc;
 }
 
 .footer ul li a:hover {
-    color: #fff;           /* highlight on hover */
+    color: #fff;
 }
+
 .footer .social-icons a {
-    margin-right: 15px;   /* space between icons */
-    font-size: 20px;      /* slightly larger icons */
-    color: #ccc;          /* footer color */
+    margin-right: 15px;
+    font-size: 20px;
+    color: #ccc;
     text-decoration: none;
 }
 
 .footer .social-icons a:hover {
-    color: #fff;          /* highlight on hover */
+    color: #fff;
 }
-.app-logo {margin-top: 20px;}
-.footer hr {border:none;background: #b5b5b5;height: 1px;margin: 20px 0;}
+
+/* App store logos */
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+    height: auto;
+    object-fit: contain;
+    display: inline-block;
+    margin: 5px;
+}
+
+/* Footer horizontal line */
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
 
 
 

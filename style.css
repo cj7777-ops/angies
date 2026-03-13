@@ -425,7 +425,20 @@ img.original-size {
     height: auto;
     display: block;
 }
+/* Fix cigar box image being cut off */
+.cigar-img {
+    width: 100%;
+    max-width: 450px;   /* adjust if you want bigger */
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
 
+.col-2 {
+    height: auto;
+    overflow: visible;
+}
 
 
 

@@ -292,4 +292,25 @@ p {
     margin-top: 15px;
     font-size: 13px;
 }
+/* Make all footer text white, including contact section */
+.footer, 
+.footer h3, 
+.footer p, 
+.footer ul li, 
+.footer ul li a {
+    color: #fff !important;
+}
 
+/* Links hover effect */
+.footer ul li a:hover,
+.footer .social-icons a:hover {
+    color: #fff !important;
+}
+
+/* Ensure copyright is visible */
+.footer .copyright {
+    text-align: center;
+    color: #fff !important;
+    margin-top: 15px;
+    font-size: 13px;
+}

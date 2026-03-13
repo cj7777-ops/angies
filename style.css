@@ -307,7 +307,8 @@ h4 {
 }
 
 .footer .col-2 img {
-    width: 180px;
+    width: 140px;
+    height: auto;
 }
 
 .footer ul {
@@ -375,6 +376,25 @@ h4 {
 .footer {
     padding: 40px 0 15px;
 }
+/* Fix oversized footer columns */
+.footer .col-1,
+.footer .col-2,
+.footer .col-3,
+.footer .col-4 {
+    flex-basis: auto;
+    min-width: 150px;
+}
+
+/* Keep footer compact */
+.footer .row {
+    align-items: flex-start;
+}
+
+/* Reduce footer padding */
+.footer {
+    padding: 40px 0 15px;
+}
+
 
 
 

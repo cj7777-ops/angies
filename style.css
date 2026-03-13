@@ -223,20 +223,15 @@ p {
 
 /* Footer */
 .footer {
-    background: #000;       /* black background */
-    color: #fff;            /* all text white */
+    background: #000;
+    color: #8a8a8a;
     font-size: 14px;
     padding: 40px 0 15px;
 }
 
 .footer h3 {
-    color: #fff;            /* headings white */
+    color: #fff;
     margin-bottom: 20px;
-}
-
-.footer p {
-    color: #fff;            /* paragraph text white */
-    line-height: 1.6;
 }
 
 .footer ul {
@@ -250,26 +245,26 @@ p {
 
 .footer ul li a {
     text-decoration: none;
-    color: #ccc;           /* links gray for contrast */
+    color: #ccc;
 }
 
 .footer ul li a:hover {
-    color: #fff;           /* links turn white on hover */
+    color: #fff;
 }
 
 .footer .social-icons a {
     margin-right: 15px;
     font-size: 20px;
-    color: #ccc;           /* social icons gray */
+    color: #ccc;
     text-decoration: none;
 }
 
 .footer .social-icons a:hover {
-    color: #fff;           /* social icons turn white on hover */
+    color: #fff;
 }
 
 /* App logos */
-.footer .app-logo img {
+.app-logo img {
     width: 140px;
     height: auto;
     object-fit: contain;
@@ -277,40 +272,32 @@ p {
     margin: 5px 10px 5px 0;
 }
 
-/* Footer horizontal line */
+/* Footer line */
 .footer hr {
     border: none;
     background: #b5b5b5;
     height: 1px;
     margin: 20px 0;
 }
+.footer p,
+.footer li {
+    color: #fff; /* makes all text visible */
+}
 
-/* Footer copyright */
+.footer h3 {
+    color: #fff;
+}
+/* Footer fixes for GitHub Pages */
+.footer,
+.footer h3,
+.footer p,
+.footer ul li,
+.footer ul li a,
 .footer .copyright {
-    text-align: center;
-    color: #fff;           /* ensure copyright is visible */
-    margin-top: 15px;
-    font-size: 13px;
-}
-/* Make all footer text white, including contact section */
-.footer, 
-.footer h3, 
-.footer p, 
-.footer ul li, 
-.footer ul li a {
-    color: #fff !important;
+    color: #fff !important;   /* forces all footer text to white */
 }
 
-/* Links hover effect */
 .footer ul li a:hover,
 .footer .social-icons a:hover {
     color: #fff !important;
-}
-
-/* Ensure copyright is visible */
-.footer .copyright {
-    text-align: center;
-    color: #fff !important;
-    margin-top: 15px;
-    font-size: 13px;
 }

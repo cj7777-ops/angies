@@ -281,6 +281,18 @@ p {
 .footer h3 {
     color: #fff;
 }
+/* Make Contact section text white */
+.footer .col-4:first-child {
+    color: #fff; /* text color */
+}
+
+.footer .col-4:first-child h3 {
+    color: #fff; /* heading color */
+}
+
+.footer .col-4:first-child p {
+    color: #fff; /* paragraph color */
+}
 
 
 

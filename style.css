@@ -273,13 +273,14 @@ p {
 }
 
 /* Footer line */
-.footer hr {
-    border: none;
-    background: #b5b5b5;
-    height: 1px;
-    margin: 20px 0;
+.footer p,
+.footer li {
+    color: #fff;
 }
-.copyright {text-align: center;}
+
+.footer h3 {
+    color: #fff;
+}
 
 
 

@@ -305,3 +305,40 @@ p {
 /*-------- media query for menu ------ */
 @media only screen and (max-width: 800px;){nav ul {position: absoute;top: 70px;left: 0;background: #333;width: 100px;}
   nav ul li {display: block;margin-right:50px;margin-top:10px;margin-bottom:10px;}
+
+                                           /* Mobile menu dropdown */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;        /* below navbar */
+        left: 0;
+        background: #333;
+        width: 100%;       /* full width for all links */
+        display: none;     /* hide by default */
+        flex-direction: column;
+        text-align: left;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        color: #fff;
+        padding: 10px 20px;
+        display: block;
+    }
+
+    nav ul li a:hover {
+        background: #555;
+        color: #fff;
+    }
+
+    /* Show menu when active */
+    nav ul.active {
+        display: flex;
+    }
+}

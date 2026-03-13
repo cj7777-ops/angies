@@ -307,53 +307,100 @@ img.original-size {
 .col-5 img:hover {filter: grayscale(0%);transform: scale(1.05);}
 
 /*------- footer ---------*/
-.footer {background: #000;
-    color: #8a8a8a;font-size:14px; padding: 60px 0 20px;}
-    .footer p{color:#8a8a8a;}
-    .footer h3 {color:#fffmargin-bottom:20px;}
-    .footer col-1, .footer col-2, .footer col-3, .footer col-4 {min-width: 250px;margin-bottom: 20px;}
-    .footer col-1:{flex-basis: 30%;}
-    .footer col-2 {flex: 1;text-align: center;}
-    .footer col-2 img {width: 180px;margin-bottom:20px;}
-    .footer col-3, .footer col-4 {flex-basis:12%;text-align:center;}
-    ul {list-style-type: none;}
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* footer columns */
+.footer .col-1,
+.footer .col-2,
+.footer .col-3,
+.footer .col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer .col-1 {
+    flex-basis: 30%;
+}
+
+.footer .col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer .col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer .col-3,
+.footer .col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+/* footer list */
 .footer ul {
-    list-style: none;      /* removes bullet points */
-    padding: 0;            /* removes left indentation */
+    list-style: none;
+    padding: 0;
 }
 
 .footer ul li {
-    margin-bottom: 10px;   /* space between links */
+    margin-bottom: 10px;
 }
 
 .footer ul li a {
-    text-decoration: none; /* removes underline */
-    color: #ccc;           /* light footer color */
+    text-decoration: none;
+    color: #ccc;
 }
 
 .footer ul li a:hover {
-    color: #fff;           /* highlight on hover */
+    color: #fff;
 }
+
+/* social icons */
 .footer .social-icons a {
-    margin-right: 15px;   /* space between icons */
-    font-size: 20px;      /* slightly larger icons */
-    color: #ccc;          /* footer color */
+    margin-right: 15px;
+    font-size: 20px;
+    color: #ccc;
     text-decoration: none;
 }
 
 .footer .social-icons a:hover {
-    color: #fff;          /* highlight on hover */
+    color: #fff;
 }
-.app-logo {margin-top: 20px;}
-.app-logo img {width:140px;}
-.footer hr {border:none;background: #b5b5b5;height: 1px;margin: 20px 0;}
-.col-2 img {
-    width: 100%;
+
+/* app store logos */
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 120px;   /* normal size */
     height: auto;
+    margin: 5px;
 }
 
-
-
+/* footer line */
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
 
 
 

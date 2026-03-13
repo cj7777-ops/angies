@@ -58,15 +58,14 @@ p {
     min-width: 300px;
 }
 
-
+/* FIXED IMAGE RULE */
 .col-2 img {
-    width: 100%;
-    height: auto;
-    display: block;
     max-width: 100%;
     height: auto;
-    object-fit: contain;
+    display: block;
 }
+
+/* Large header text */
 .col-2 h1 {
     font-size: 50px;
     line-height: 60px;
@@ -187,7 +186,7 @@ h4 {
     }
 }
 
-/* Offer Section (Juul) */
+/* Offer Section */
 .offer-row {
     display: flex;
     align-items: center;
@@ -217,69 +216,44 @@ h4 {
 .offer-text h1 {
     font-size: 36px;
     margin-bottom: 5px;
-    color: #000;
 }
 
-/* Tight small text next to Buy Now button */
 .offer-text small {
     display: inline;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    color: #a01919; /* optional color */
+    color: #a01919;
 }
 
-/* Optional: tighten spacing above button */
-.offer-text .btn {
-    margin-top: 5px;
-}
-/* Testimonial image sizing to match featured products */
-.testimonial img {
-    width: 100%;          /* fill the column width */
-    height: 300px;        /* same height as featured products */
-    object-fit: cover;    /* crop/scale without distortion */
-    border-radius: 10px;  /* optional, same style as products */
-    margin-top: 10px;
-}
-/* Make all main, category, and col-3 images match featured product size */
-.col-2 img:not(.app-logo img) {
-    width: 100%;
-    height: auto;
-}
-.categories .col-3 img {
-    width: 100%;         /* fill the column width */
-    height: 300px;       /* same as featured products */
-    object-fit: cover;   /* crop/scale without distortion */
-    border-radius: 10px; /* optional, consistent style */
-}
-/* Keep this image at its original size */
-img.original-size {
-    width: auto;    /* use original width */
-    height: auto;   /* use original height */
-    max-width: 100%; /* optional: prevent it from overflowing the container */
-    border-radius: 10px; /* optional: keep styling consistent */
-}
-/*-------------Testimonial Section-------------*/
+/* Testimonials */
 .testimonial {
     padding: 100px;
 }
 
-/* Small, round testimonial images */
 .testimonial .col-3 img {
-    width: 100px;        /* small, seeable size */
-    height: 100px;       /* keep it square */
-    object-fit: cover;   /* crop to fill the square without distortion */
-    border-radius: 50%;  /* make it perfectly round */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
     margin-top: 20px;
 }
-/* Quote icon color in testimonial matches star rating */
+
 .testimonial .col-3 .fas.fa-quote-left {
     font-size: 34px;
-    color: green;  /* same as star ratings */
+    color: green;
 }
-.col-3 p {font-size:12px;margin: 12px 0;color:#777;}
-.testimonial .col-3 h3 {font-weight: 600;color:#555;font-size: 16px;}
-/*---- Brands Section ----*/
+
+.col-3 p {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.testimonial .col-3 h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Brands */
 .brands {
     display: flex;
     justify-content: center;
@@ -298,18 +272,16 @@ img.original-size {
     max-height: 80px;
     object-fit: contain;
     cursor: pointer;
-    filter: grayscale(100%); /* makes logos gray */
+    filter: grayscale(100%);
     transition: filter 0.3s, transform 0.3s;
 }
 
-/* Optional hover effect */
 .col-5 img:hover {
     filter: grayscale(0%);
     transform: scale(1.05);
 }
-.col-5 img:hover {filter: grayscale(0%);transform: scale(1.05);}
 
-/*------- footer ---------*/
+/* Footer */
 .footer {
     background: #000;
     color: #8a8a8a;
@@ -326,7 +298,6 @@ img.original-size {
     margin-bottom: 20px;
 }
 
-/* footer columns */
 .footer .col-1,
 .footer .col-2,
 .footer .col-3,
@@ -335,27 +306,10 @@ img.original-size {
     margin-bottom: 20px;
 }
 
-.footer .col-1 {
-    flex-basis: 30%;
-}
-
-.footer .col-2 {
-    flex: 1;
-    text-align: center;
-}
-
 .footer .col-2 img {
     width: 180px;
-    margin-bottom: 20px;
 }
 
-.footer .col-3,
-.footer .col-4 {
-    flex-basis: 12%;
-    text-align: center;
-}
-
-/* footer list */
 .footer ul {
     list-style: none;
     padding: 0;
@@ -374,70 +328,23 @@ img.original-size {
     color: #fff;
 }
 
-/* social icons */
-.footer .social-icons a {
-    margin-right: 15px;
-    font-size: 20px;
-    color: #ccc;
-    text-decoration: none;
-}
-
-.footer .social-icons a:hover {
-    color: #fff;
-}
-
-/* app store logos */
+/* App logos */
 .app-logo {
     margin-top: 20px;
 }
 
 .app-logo img {
-    width: 120px;   /* normal size */
+    width: 120px;
     height: auto;
-    margin: 5px;
+    margin-right: 10px;
 }
 
-/* footer line */
+/* Footer line */
 .footer hr {
     border: none;
     background: #b5b5b5;
     height: 1px;
     margin: 20px 0;
-}
-/* App store logos */
-.app-logo {
-    margin-top: 20px;
-}
-
-.app-logo img {
-    width: 120px;
-    height: auto;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-/* Prevent footer logos from stretching */
-.footer .app-logo img {
-    width: 120px;
-}
-.cigar-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-/* Fix cigar box image being cut off */
-.cigar-img {
-    width: 100%;
-    max-width: 450px;   /* adjust if you want bigger */
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: auto;
-}
-
-.col-2 {
-    height: auto;
-    overflow: visible;
 }
 
 

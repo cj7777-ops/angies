@@ -279,14 +279,7 @@ p {
     height: 1px;
     margin: 20px 0;
 }
-.footer p,
-.footer li {
-    color: #fff; /* makes all text visible */
-}
-
-.footer h3 {
-    color: #fff;
-}
+.copyright {text-align: center;}
 
 
 

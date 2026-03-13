@@ -286,29 +286,33 @@ h4 {
     background: #000;
     color: #8a8a8a;
     font-size: 14px;
-    padding: 60px 0 20px;
+    padding: 30px 0; /* smaller, cleaner */
 }
 
-.footer p {
-    color: #8a8a8a;
-}
-
-.footer h3 {
-    color: #fff;
-    margin-bottom: 20px;
+.footer .row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* keeps spacing tidy */
 }
 
 .footer .col-1,
 .footer .col-2,
 .footer .col-3,
 .footer .col-4 {
-    min-width: 250px;
-    margin-bottom: 20px;
+    flex: 1 1 180px; /* flexible, compact columns */
+    min-width: 180px; /* smaller than your old 250px */
 }
 
-.footer .col-2 img {
-    width: 140px;
-    height: auto;
+.footer h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer p,
+.footer ul li a {
+    color: #ccc;
 }
 
 .footer ul {
@@ -317,87 +321,21 @@ h4 {
 }
 
 .footer ul li {
-    margin-bottom: 10px;
-}
-
-.footer ul li a {
-    text-decoration: none;
-    color: #ccc;
-}
-
-.footer ul li a:hover {
-    color: #fff;
-}
-
-/* App logos */
-.app-logo {
-    margin-top: 20px;
+    margin-bottom: 8px;
 }
 
 .app-logo img {
-    width: 120px;
+    width: 110px;
     height: auto;
     margin-right: 10px;
 }
 
-/* Footer line */
 .footer hr {
     border: none;
-    background: #b5b5b5;
+    background: #444;
     height: 1px;
     margin: 20px 0;
 }
-/* Fix oversized footer */
-.footer .row {
-    align-items: flex-start;
-}
-
-.footer .col-1,
-.footer .col-2,
-.footer .col-3,
-.footer .col-4 {
-    min-width: 150px;
-}
-
-.footer .col-1 {
-    flex-basis: 30%;
-}
-
-.footer .col-2 {
-    flex-basis: 25%;
-}
-
-.footer .col-3,
-.footer .col-4 {
-    flex-basis: 15%;
-}
-
-/* tighten footer spacing */
-.footer {
-    padding: 40px 0 15px;
-}
-/* Fix oversized footer columns */
-.footer .col-1,
-.footer .col-2,
-.footer .col-3,
-.footer .col-4 {
-    flex-basis: auto;
-    min-width: 150px;
-}
-
-/* Keep footer compact */
-.footer .row {
-    align-items: flex-start;
-}
-
-/* Reduce footer padding */
-.footer {
-    padding: 40px 0 15px;
-}
-
-
-
-
 
 
 

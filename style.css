@@ -420,6 +420,11 @@ img.original-size {
 .footer .app-logo img {
     width: 120px;
 }
+.cigar-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 
 

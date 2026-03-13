@@ -345,11 +345,13 @@ img.original-size {
     color: #fff;          /* highlight on hover */
 }
 .app-logo {margin-top: 20px;}
+.app-logo img {width:140px;}
 .footer hr {border:none;background: #b5b5b5;height: 1px;margin: 20px 0;}
 .col-2 img {
     width: 100%;
     height: auto;
 }
+
 
 
 

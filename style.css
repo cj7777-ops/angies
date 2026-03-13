@@ -297,4 +297,11 @@ p {
     color: #fff !important;   /* forces all footer text to white */
 }
 
+.footer ul li a:hover,
+.footer .social-icons a:hover {
+    color: #fff !important;
+}
+.menu-icon{width:28px;margin-left: 20px;}!important;   /* forces all footer text to white */
+}
+
 

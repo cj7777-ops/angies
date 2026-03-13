@@ -401,6 +401,13 @@ img.original-size {
     height: 1px;
     margin: 20px 0;
 }
+/* Fix app store logo size */
+.app-logo img {
+    width: 120px !important;
+    height: auto;
+    display: inline-block;
+    margin: 5px;
+}
 
 
 

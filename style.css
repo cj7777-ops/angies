@@ -301,7 +301,7 @@ p {
 .footer .social-icons a:hover {
     color: #fff !important;
 }
-.menu-icon{width:15px;margin-left: 20px;}!important;   /* forces all footer text to white */
+.menu-icon{width:15px;margin-left: 20px;!important;}   /* forces all footer text to white */
 }
 
 

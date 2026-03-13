@@ -242,7 +242,10 @@ h4 {
     margin-top: 10px;
 }
 /* Make all main, category, and col-3 images match featured product size */
-.col-2 img,
+.col-2 img:not(.app-logo img) {
+    width: 100%;
+    height: auto;
+}
 .categories .col-3 img {
     width: 100%;         /* fill the column width */
     height: 300px;       /* same as featured products */
@@ -401,13 +404,23 @@ img.original-size {
     height: 1px;
     margin: 20px 0;
 }
-/* Fix app store logo size */
+/* App store logos */
+.app-logo {
+    margin-top: 20px;
+}
+
 .app-logo img {
-    width: 120px !important;
+    width: 120px;
     height: auto;
     display: inline-block;
-    margin: 5px;
+    margin-right: 10px;
 }
+
+/* Prevent footer logos from stretching */
+.footer .app-logo img {
+    width: 120px;
+}
+
 
 
 

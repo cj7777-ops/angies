@@ -223,15 +223,20 @@ p {
 
 /* Footer */
 .footer {
-    background: #000;
-    color: #8a8a8a;
+    background: #000;       /* black background */
+    color: #fff;            /* all text white */
     font-size: 14px;
     padding: 40px 0 15px;
 }
 
 .footer h3 {
-    color: #fff;
+    color: #fff;            /* headings white */
     margin-bottom: 20px;
+}
+
+.footer p {
+    color: #fff;            /* paragraph text white */
+    line-height: 1.6;
 }
 
 .footer ul {
@@ -245,26 +250,26 @@ p {
 
 .footer ul li a {
     text-decoration: none;
-    color: #ccc;
+    color: #ccc;           /* links gray for contrast */
 }
 
 .footer ul li a:hover {
-    color: #fff;
+    color: #fff;           /* links turn white on hover */
 }
 
 .footer .social-icons a {
     margin-right: 15px;
     font-size: 20px;
-    color: #ccc;
+    color: #ccc;           /* social icons gray */
     text-decoration: none;
 }
 
 .footer .social-icons a:hover {
-    color: #fff;
+    color: #fff;           /* social icons turn white on hover */
 }
 
 /* App logos */
-.app-logo img {
+.footer .app-logo img {
     width: 140px;
     height: auto;
     object-fit: contain;
@@ -272,35 +277,19 @@ p {
     margin: 5px 10px 5px 0;
 }
 
-/* Footer line */
-.footer p,
-.footer li {
-    color: #fff;
+/* Footer horizontal line */
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
 }
 
-.footer h3 {
-    color: #fff;
+/* Footer copyright */
+.footer .copyright {
+    text-align: center;
+    color: #fff;           /* ensure copyright is visible */
+    margin-top: 15px;
+    font-size: 13px;
 }
-/* Make Contact section text white */
-.footer .col-4:first-child {
-    color: #fff; /* text color */
-}
-
-.footer .col-4:first-child h3 {
-    color: #fff; /* heading color */
-}
-
-.footer .col-4:first-child p {
-    color: #fff; /* paragraph color */
-}
-/* Make Contact section text white */
-.footer .col-4:first-child,
-.footer .col-4:first-child h3,
-.footer .col-4:first-child p {
-    color: #fff !important;  /* force white text */
-}
-
-
-
-
 

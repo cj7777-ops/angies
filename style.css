@@ -346,6 +346,36 @@ h4 {
     height: 1px;
     margin: 20px 0;
 }
+/* Fix oversized footer */
+.footer .row {
+    align-items: flex-start;
+}
+
+.footer .col-1,
+.footer .col-2,
+.footer .col-3,
+.footer .col-4 {
+    min-width: 150px;
+}
+
+.footer .col-1 {
+    flex-basis: 30%;
+}
+
+.footer .col-2 {
+    flex-basis: 25%;
+}
+
+.footer .col-3,
+.footer .col-4 {
+    flex-basis: 15%;
+}
+
+/* tighten footer spacing */
+.footer {
+    padding: 40px 0 15px;
+}
+
 
 
 

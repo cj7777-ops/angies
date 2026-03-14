@@ -364,3 +364,11 @@ p {
         display: flex;
     }
 }
+                                          .featured-products-title {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto 30px auto;
+    font-size: 2rem; /* optional */
+    font-weight: bold; /* optional */
+}
+ 

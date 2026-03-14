@@ -371,4 +371,11 @@ p {
     font-size: 2rem; /* optional */
     font-weight: bold; /* optional */
 }
- 
+ /* Make Featured Product images the same size as shelf images */
+.categories img,
+.small-container .row .col-4 img {
+    width: 100%;
+    height: 200px; /* adjust this to match your shelf image height */
+    object-fit: cover;
+    display: block;
+}
